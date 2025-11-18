@@ -1,0 +1,98 @@
+html {scroll-behavior: smooth;}
+h1 {
+    color: #F8F9FA;
+    font-family: "Times New Roman", Georgia, Garamond, serif;
+    font-size: 50px;
+    padding-left: 725px;
+}
+
+
+body{
+    background-color: #6C757D;
+}
+
+.shortintro{
+    color: #F8F9FA;
+    font-family: monospace;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.image1{
+    text-align: center;
+    padding-top: 100px;
+    color: #F8F9FA;
+    font-family: monospace;
+
+}
+.site-nav{
+    overflow:hidden;
+}
+
+.site-nav a{
+    display:flex;
+    justify-content: left;
+    color:#DEE2E6 ;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.site-nav a:hover{
+   color:#ADB5BD;
+}
+
+.section{
+    padding: 70px 10px;
+    scroll-margin-top: 70px;
+    
+}
+
+h2 {
+    color: #343A40;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    
+}
+
+p{
+    color: #F8F9FA;
+    font-family: monospace;
+    font-size: 15px;
+}
+ul{
+     color: #cbc0d3;
+    font-family: monospace;
+    font-size: 15px;
+}
+.image2{
+    float: right;
+    padding-top: 100px;
+}
+
+.linkedin a{
+    color:#F8F9FA;
+    padding-left: 15px;
+}
+.linkedin a:visited{
+    color:#CED4DA
+}
+.linkedin a:hover{
+   color:#ADB5BD;
+}
+.resume a{
+    color:#F8F9FA;
+    padding-left: 15px;
+}
+.resume a:visited{
+    color:#CED4DA
+}
+.resume a:hover{
+   color:#ADB5BD;
+}
+h3 {
+    color: #343A40;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    
+}
