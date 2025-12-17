@@ -88,6 +88,7 @@
           <p>IITSC Sub-Committee<br>
           2023-2026</p>
           <p> Throughout my poly experience, I was part of the Informatics and IT Studies Club sub-committee. Being part of the committee allowed me to invlove myself in school events (Open House, Orientation, Bonding Camps etc.). Being part of the studies club allowed me to make new friends with different students from different courses within the School of IT varying from different ages. This allowed me to learn more about their experience in their respective courses while also making new friends and geting to know one another. They also provide community events that we can choose to take part in to give back to the community and the school.</p>
+  
     <section id="projects" class="section"> 
         <h2>Projects</h2>
         <h3>CCA Projects</h3>
@@ -108,30 +109,20 @@
         <p> Year 2:<br>
         In year 2, I learnt how to create a secure website during Secure Web Applications module. My project specification was to create a Secure Robotic Course Management System for managing robotic course materials, student assignments and scores. The system was built using PHP and MySQL. Below are some screenshots of the website my groupmates and I created. </p>
         <div class = "scroll-container">
-          <img src = "project1.jpg" height="300">
-          <img src = "project2.jpg" height="300">
-          <img src = "project3.jpg" height="300">
-          <img src = "project4.jpg" height="300">
-          <img src = "project5.jpg" height="300">
-          <img src = "project6.jpg" height="300">
+          <img src = "project1.jpg" height="300" class="clickable-img modal-img">
+          <img src = "project2.jpg" height="300" class="clickable-img modal-img">
+          <img src = "project3.jpg" height="300" class="clickable-img modal-img">
+          <img src = "project4.jpg" height="300" class="clickable-img modal-img">
+          <img src = "project5.jpg" height="300" class="clickable-img modal-img">
+          <img src = "project6.jpg" height="300" class="clickable-img modal-img">
         </div>
         <p> Year 3:<br>
         In year 3, other than my six-month internship, I chose to take a Sustainability elective where we take modules like Data Analysis for Environmental Sustainability (DAES) and Green Software Principles (GSRP). My first project for DAES was to create a poster for data analysis on a chosen topic. Below is my poster for DAES module where I developed the charts using QGIS and PowerBI with researched data. </p>
-        <img src = "Poster_P03_2302518B.jpg"  onclick="openImage(this.src)" class="clickable-img" height="500px">
-        <div id="myModal" class="modal">
+        <img src = "Poster_P03_2302518B.jpg"  class="clickable-img modal-img" height="500">
+        <div id="imgModal" class="modal">
           <span class ="close" onclick="closeImage()">&times;</span>
           <img class = "modal-content" id="fullImg">
-        </div>
- <script>
-function openImage(src) {
-  document.getElementById("myModal").style.display = "block";
-  document.getElementById("fullImg").src = src;
-}
-
-function closeImage() {
-  document.getElementById("myModal").style.display = "none";
-}
-</script>    
+        </div>   
     </section>
     <section id="contact" class="section"> 
         <h2>Contact</h2>
@@ -167,5 +158,28 @@ function closeImage() {
     setTimeout(() => heart.remove(), 10000);
   }, 800);
 </script>
+<script>
+    const modal = document.getElementById("imgModal");
+    const modalImg = document.getElementById("fullImg");
+    const closeBtn = document.querySelector(".close");
+
+    document.querySelectorAll(".modal-img").forEach(img => {
+      img.addEventListener("click", () => {
+        modal.style.display = "block";
+        modalImg.src = img.src;
+        modalImg.alt = img.alt || "Enlarged image";
+      });
+    });
+    function closeImage() {
+      modal.style.display = "none";
+      modalImg.src = "";
+    }
+     modal.addEventListener("click", (e) => {
+    if (e.target === modal) closeImage();
+  });
+ document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeImage();
+  });
+  </script>  
 </body>
 </html>

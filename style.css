@@ -140,7 +140,7 @@ div.scroll-container img{
 .modal {
   display: none;
   position: fixed;
-  z-index: 999;
+  z-index: 9999;
   left: 0;
   top: 0;
   width: 100%;
@@ -151,7 +151,7 @@ div.scroll-container img{
 
 .modal-content {
   display: block;
-  margin: auto;
+  margin:0 auto;
   width: auto;
   height: auto;
   max-width: 100%;
