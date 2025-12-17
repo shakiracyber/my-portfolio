@@ -2,18 +2,43 @@ html {scroll-behavior: smooth;}
 h1 {
     display:flex;
     justify-content: center;
-    color: #F8F9FA;
+    color: #F9F7F7;
     font-family: "Times New Roman", Georgia, Garamond, serif;
     font-size: 50px;
 }
 
 
 body{
-    background-color: #6C757D;
+    background-color: #112D4E;
 }
-
+.hearts img{
+    position: fixed;
+    bottom: -60px;
+    width: 30px;
+    opacity: 0.6;
+    animation: floatUp linear infinite;
+    pointer-events: none;
+     filter: drop-shadow(0 4px 8px rgba(0,0,0,0.15));
+}
+@keyframes floatUp{
+    from{
+        transform: translateY(0) scale(1);
+        opacity: 0.7;
+    }
+    to{
+        transform: translateY(-120vh) scale(1.3);
+        opacity:0;
+    }
+    
+}
+@media (prefers-reduced-motion: reduce) {
+  .hearts { display: none; }
+}
+@media (max-width: 600px) {
+  .hearts { display: none; }
+}
 .shortintro{
-    color: #F8F9FA;
+    color: #F9F7F7;
     font-family: monospace;
     text-align: center;
     padding-top: 100px;
@@ -22,7 +47,7 @@ body{
 .image1{
     text-align: center;
     padding-top: 100px;
-    color: #F8F9FA;
+    color: #F9F7F7;
     font-family: monospace;
 
 }
@@ -40,7 +65,7 @@ body{
 }
 
 .site-nav a:hover{
-   color:#ADB5BD;
+   color:#3F72AF;
 }
 
 .section{
@@ -49,15 +74,16 @@ body{
     
 }
 
+
 h2 {
-    color: #343A40;
+    color: #3F72AF;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px;
     
 }
 
 p{
-    color: #F8F9FA;
+    color: #F9F7F7;
     font-family: monospace;
     font-size: 15px;
 }
@@ -72,7 +98,7 @@ ul{
 }
 
 .linkedin a{
-    color:#F8F9FA;
+    color:#F9F7F7;
     padding-left: 15px;
 }
 .linkedin a:visited{
@@ -82,7 +108,7 @@ ul{
    color:#ADB5BD;
 }
 .resume a{
-    color:#F8F9FA;
+    color:#F9F7F7;
     padding-left: 15px;
 }
 .resume a:visited{
@@ -92,8 +118,52 @@ ul{
    color:#ADB5BD;
 }
 h3 {
-    color: #343A40;
+    color: #3F72AF;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
     
+}
+div.scroll-container{
+    background-color: #112D4E;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+}
+div.scroll-container img{
+    padding: 10px;
+}
+.clickable-img {
+  max-width: 300px;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  
+}
+
+.modal-content {
+  display: block;
+  margin:0 auto;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 0.5%;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
 }
