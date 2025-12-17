@@ -2,18 +2,18 @@ html {scroll-behavior: smooth;}
 h1 {
     display:flex;
     justify-content: center;
-    color: #F8F9FA;
+    color: #F9F7F7;
     font-family: "Times New Roman", Georgia, Garamond, serif;
     font-size: 50px;
 }
 
 
 body{
-    background-color: #6C757D;
+    background-color: #DBE2EF;
 }
 
 .shortintro{
-    color: #F8F9FA;
+    color: #F9F7F7;
     font-family: monospace;
     text-align: center;
     padding-top: 100px;
@@ -22,7 +22,7 @@ body{
 .image1{
     text-align: center;
     padding-top: 100px;
-    color: #F8F9FA;
+    color: #F9F7F7;
     font-family: monospace;
 
 }
@@ -40,7 +40,7 @@ body{
 }
 
 .site-nav a:hover{
-   color:#ADB5BD;
+   color:#3F72AF;
 }
 
 .section{
@@ -50,14 +50,14 @@ body{
 }
 
 h2 {
-    color: #343A40;
+    color: #112D4E;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px;
     
 }
 
 p{
-    color: #F8F9FA;
+    color: #F9F7F7;
     font-family: monospace;
     font-size: 15px;
 }
@@ -72,7 +72,7 @@ ul{
 }
 
 .linkedin a{
-    color:#F8F9FA;
+    color:#F9F7F7;
     padding-left: 15px;
 }
 .linkedin a:visited{
@@ -82,7 +82,7 @@ ul{
    color:#ADB5BD;
 }
 .resume a{
-    color:#F8F9FA;
+    color:#F9F7F7;
     padding-left: 15px;
 }
 .resume a:visited{
@@ -92,13 +92,13 @@ ul{
    color:#ADB5BD;
 }
 h3 {
-    color: #343A40;
+    color: #112D4E;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
     
 }
 div.scroll-container{
-    background-color: #6C757D;
+    background-color: #DBE2EF;
     overflow: auto;
     white-space: nowrap;
     padding: 10px;
