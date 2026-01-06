@@ -155,29 +155,7 @@
     </section>
    
 </main>
-<div class ="hearts"></div>
-<script>
-  const container = document.querySelector(".hearts");
-  let count = 0;
-  const maxHearts = 8;
 
-  const interval = setInterval(()=>{
-    if (count >= maxHearts){
-      clearInterval(interval);
-      return;
-    }
-    const heart = document.createElement("img");
-    heart.src = "heart.png";
-    heart.style.left = Math.random() * 100 + "vw";
-    heart.style.animationDuration = Math.random() * 4 + 6 + "s";
-   
-
-    container.appendChild(heart);
-    count++;
-
-    setTimeout(() => heart.remove(), 10000);
-  }, 800);
-</script>
 <script>
     const modal = document.getElementById("imgModal");
     const modalImg = document.getElementById("fullImg");
