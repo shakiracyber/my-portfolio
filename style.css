@@ -1,13 +1,26 @@
 :root{
   --bg: #0b0f17;
-  --card: rgba(255,255,255,.06);
-  --text: rgba(255,255,255,.92);
-  --muted: rgba(255,255,255,.68);
-  --border: rgba(255,255,255,.14);
-  --accent: #7dd3fc; /* soft cyan */
+
+  /* surfaces */
+  --card: rgba(255,255,255,.05);
+  --card-strong: rgba(255,255,255,.08);
+
+  /* text */
+  --text: rgba(255,255,255,.94);
+  --muted: rgba(255,255,255,.70);
+
+  /* borders */
+  --border: rgba(255,255,255,.12);
+
+  /* accents */
+  --accent: #7dd3fc;
+  --accent-soft: rgba(125,211,252,.18);
+
+  /* effects */
   --shadow: 0 10px 30px rgba(0,0,0,.35);
   --radius: 18px;
 }
+
 
 html {scroll-behavior: smooth;}
 h1 {
