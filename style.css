@@ -180,3 +180,103 @@ div.scroll-container img{
 }
 
 
+html{ scroll-behavior:smooth; }
+
+body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
+  line-height:1.65;
+  color: var(--text);
+  background:
+    radial-gradient(900px 500px at 20% 0%, rgba(125,211,252,.18), transparent 60%),
+    radial-gradient(700px 500px at 90% 10%, rgba(167,139,250,.18), transparent 60%),
+    var(--bg);
+}
+
+/* Center content (works for many templates) */
+main, .container, .wrapper, article{
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 28px 18px;
+}
+
+p{ color: var(--muted); margin: 0 0 14px; }
+strong{ color: var(--text); }
+
+h1, h2, h3{
+  line-height:1.2;
+  margin: 26px 0 10px;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+h1{ font-size: clamp(2rem, 2.6vw, 2.6rem); margin-top: 10px; }
+h2{ font-size: clamp(1.35rem, 2vw, 1.65rem); margin-top: 52px; }
+h3{ font-size: 1.1rem; margin-top: 24px; }
+
+a{
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255,.25);
+}
+a:hover{
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+/* ===== Cards for sections (applies to common markdown blocks) ===== */
+blockquote, hr + h2, .card{
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+blockquote{
+  margin: 18px 0;
+  padding: 16px 18px;
+}
+hr{
+  border: none;
+  border-top: 1px solid rgba(255,255,255,.12);
+  margin: 34px 0;
+}
+
+/* ===== Lists ===== */
+ul{ padding-left: 18px; margin: 10px 0 18px; }
+li{ margin: 8px 0; color: var(--muted); }
+
+/* ===== Images ===== */
+img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,.12);
+}
+img + em, figcaption{ color: var(--muted); }
+
+/* ===== Simple “button” style for key links ===== */
+a[href*="linkedin"], a[href$=".pdf"], a[href*="mailto:"], a[href*="Download"]{
+  display:inline-block;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.18);
+  background: rgba(255,255,255,.06);
+  box-shadow: 0 8px 18px rgba(0,0,0,.25);
+  margin: 6px 10px 6px 0;
+}
+a[href*="linkedin"]:hover,
+a[href$=".pdf"]:hover,
+a[href*="mailto:"]:hover{
+  border-color: rgba(125,211,252,.7);
+  transform: translateY(-1px);
+}
+
+/* ===== Optional: make the top nav look cleaner if it’s just links ===== */
+nav a, header a{
+  border-bottom: none;
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+nav a:hover, header a:hover{
+  background: rgba(255,255,255,.06);
+}
