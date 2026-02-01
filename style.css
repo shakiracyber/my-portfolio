@@ -1,22 +1,27 @@
 :root{
-  --bg: #0b0f17;
+  /* ===== Base Background ===== */
+  --bg: #0F1412;                 /* deep forest tech */
+  --bg-alt: #121A16;             /* slightly lighter section bg */
 
-  /* surfaces */
+  /* ===== Surface / Cards ===== */
   --card: rgba(255,255,255,.05);
   --card-strong: rgba(255,255,255,.08);
 
-  /* text */
-  --text: rgba(255,255,255,.94);
-  --muted: rgba(255,255,255,.70);
+  /* ===== Text ===== */
+  --text: #E8F1EC;
+  --muted: #A6B3AC;
 
-  /* borders */
+  /* ===== Borders ===== */
   --border: rgba(255,255,255,.12);
 
-  /* accents */
-  --accent: #7dd3fc;
-  --accent-soft: rgba(125,211,252,.18);
+  /* ===== Accent (Main Moss) ===== */
+  --accent: #7A9E8A;             /* moss green */
 
-  /* effects */
+  /* ===== Accent Variations ===== */
+  --accent-soft: rgba(122,158,138,.18);
+  --accent-light: #C2D4C8;       /* sage highlight */
+
+  /* ===== Effects ===== */
   --shadow: 0 10px 30px rgba(0,0,0,.35);
   --radius: 18px;
 }
