@@ -43,7 +43,10 @@ img{
   max-width: 100%;
   height: auto;
 }
-
+.hero {
+  text-align: center;
+  padding: 20px;
+}
 @media (max-width: 768px) {
 
   body {
@@ -59,7 +62,12 @@ img{
     margin-left: 0;
     width: 100%;
   }
-
+@media (max-width:768px){
+.hero img{
+  max-height: 300px;
+  object-fit: cover;
+}
+}
 }
 html {scroll-behavior: smooth;}
 h1 {
